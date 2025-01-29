@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# E-commerce con Carrito de Compras en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto de e-commerce desarrollado en React que incluye un carrito de compras funcional. La aplicación permite a los usuarios navegar por productos, ver detalles de cada producto, agregar productos al carrito y gestionar su compra. Está construido utilizando React, Tailwind CSS para estilos y una estructura de componentes modular.
 
-## Available Scripts
+## Características principales
 
-In the project directory, you can run:
+- **Navegación entre páginas**: Uso de `react-router-dom` para manejar rutas y navegación.
+- **Página de inicio (`Home`)**: Muestra una lista de productos disponibles.
+- **Página de detalles (`Detail`)**: Muestra información detallada de un producto específico.
+- **Carrito de compras**: Permite agregar, eliminar y gestionar productos en el carrito.
+- **Diseño responsive**: Utiliza Tailwind CSS para un diseño moderno y adaptable a diferentes dispositivos.
+- **Gestión del estado del carrito**: Implementa un store para manejar el estado del carrito de compras.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Estructura del proyecto
+maurocastro1705-ecommerce-cart-react-app/
+├── README.md
+├── LICENSE
+├── package.json
+├── tailwind.config.js # Configuración de Tailwind CSS
+├── public/
+│ ├── index.html
+│ ├── manifest.json
+│ └── robots.txt
+└── src/
+├── App.css # Estilos globales
+├── App.js # Componente principal de la aplicación
+├── App.test.js # Pruebas unitarias
+├── index.css # Estilos de entrada
+├── index.js # Punto de entrada de la aplicación
+├── products.js # Datos de los productos
+├── reportWebVitals.js # Métricas de rendimiento
+├── setupTests.js # Configuración de pruebas
+├── assets/
+│ └── images/ # Imágenes utilizadas en el proyecto
+├── components/
+│ ├── cartItem.js # Componente para un ítem del carrito
+│ ├── cartTab.js # Componente para la pestaña del carrito
+│ ├── header.js # Componente del encabezado
+│ ├── layout.js # Layout principal de la aplicación
+│ └── productCart.js # Componente para mostrar un producto en el carrito
+├── pages/
+│ ├── detail.js # Página de detalles del producto
+│ └── home.js # Página de inicio
+└── stores/
+├── cart.js # Lógica del carrito de compras
+└── index.js # Store principal
